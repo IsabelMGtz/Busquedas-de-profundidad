@@ -130,6 +130,6 @@ var ruta1 = [
 	locations.alvarado.coordenadas,
 ];
 
-var polyline = L.polyline(ruta1, {color: 'blue'}).addTo(mymap);
+var polyline = L.polyline(ruta1, {color: 'red'}).addTo(mymap);
 
 console.log(mymap.distance(locations.xalapa.coordenadas, locations.zempoala.coordenadas) + ' metros');
