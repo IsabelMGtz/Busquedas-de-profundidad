@@ -128,6 +128,7 @@ var ruta1 = [
 	locations.zempoala.coordenadas,
 	locations.boca.coordenadas,
 	locations.alvarado.coordenadas,
+	locations.coatza.coordenadas,
 ];
 
 var polyline = L.polyline(ruta1, {color: 'red'}).addTo(mymap);
