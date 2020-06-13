@@ -105,10 +105,7 @@ var locations = {
 		'titulo': 'San Andrés Tuxtla',
 		'coordenadas': [18.44412, -95.21302]
 	},
-	'vega': {
-		'titulo': 'Vega de Alatorre',
-		'coordenadas': [20.03034, -96.65044]
-	},
+	
 };
 
 Object.entries(locations).forEach(site => pintaMarker(site));
@@ -125,11 +122,15 @@ function pintaMarker(item) {
 
 // create a red polyline from an array of LatLng points
 var ruta1 = [
-	locations.xalapa.coordenadas,
-	locations.zempoala.coordenadas,
+	locations.papantla.coordenadas,
+	locations.tecolutla.coordenadas,
 	locations.vega.coordenadas,
+	locations.zempoala.coordenadas,
+	locations.boca.coordenadas,
+	locations.alvarado.cpprdenadas,
+	locations.sanandres.coordenadas,
 ];
 
-var polyline = L.polyline(ruta1, {color: 'red'}).addTo(mymap);
+var polyline = L.polyline(ruta1, {color: 'blue'}).addTo(mymap);
 
 console.log(mymap.distance(locations.xalapa.coordenadas, locations.zempoala.coordenadas) + ' metros');
