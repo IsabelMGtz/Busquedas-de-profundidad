@@ -25,3 +25,19 @@ Las estrategias de búsqueda se evaluan según los siguientes criterios:
 Los algoritmos de búsqueda ciega o no informada no dependen de información propia del problema a la hora de resolverlo, sino que proporcionan métodos generales para recorrer los árboles de búsqueda asociados a la representación del problema, por lo que se pueden aplicar en cualquier circunstancia. 
 
 Existen dos estrategias de recorrido de un espacio de búsqueda, en anchura y en **profundidad**. El problema principal que tienen es que, al ser exahustivos y sistemáticos su coste puede ser prohibitivo para la mayoria de los prblemas reales, por lo tanto solo serán aplicables en problemas pequeños, pero presentan la ventaja de que no es necesario ningún conocimiento adicional sobre el problema por lo que siempre son aplicables. 
+
+En este trabajo se abordara el tema de **búsquedas en profundidad** 
+
+Una búsqueda en profundidad(DFS o Depth First Search) es un algoritmo que permite recorrer todos los nodos de un árbol o grafo de manera ordenada. Esta puede ser vista como un proceso por niveles,debido a que tras visitar un nodo,  se visitan a sus hijos antes que a sus hermanos, por lo que el algoritmo tiende a bajar por las ramas del árbol haciia las hojas antes de visitar cada una de las ramas posibles. DFS se puede implementar por medio de una pila accediendo a sus elementos pur un proceso de LIFO. 
+
+**características**
+ * Requiere técnica de retroceso (backtracking)
+ * razones para retroceso:
+   * se ha llegado al límite de profundidad
+   * se han estudiado todos los sucesores de un nodo y bno se ha llegado a la solución 
+   * Se sabe que el estado no conduce a la solución
+   * Se genera un estado repetido 
+ * **Completitud:** No asegura encontrar la solución 
+ * **optimalidad:** No asegura encontrar la solución optima 
+ * **Eficiencia:** bueno cuando metas alejadas del estado inicial o problemas de memoria 
+ * No es bueno cuando hay ciclos.
