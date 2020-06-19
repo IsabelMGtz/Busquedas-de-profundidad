@@ -20,7 +20,7 @@ Las estrategias de búsqueda se evaluan según los siguientes criterios:
  
  Las estrategias de busquedas se agrupan de la siguiente manera: 
   - Búsquedas sin contar con información(  o búsqueda ciega): No existe información acerca de los pasos necesarios o sobre el costo de ruta para pasar del estado de un momento dado a la meta
-  - Busqueda respaldada coon información (o búsqueda heurística): Posee información muy valiosa para orientar la búsqueda
+  - Busqueda respaldada con información (o búsqueda heurística): Posee información muy valiosa para orientar la búsqueda
   
 Los algoritmos de búsqueda ciega o no informada no dependen de información propia del problema a la hora de resolverlo, sino que proporcionan métodos generales para recorrer los árboles de búsqueda asociados a la representación del problema, por lo que se pueden aplicar en cualquier circunstancia. 
 
@@ -28,16 +28,26 @@ Existen dos estrategias de recorrido de un espacio de búsqueda, en anchura y en
 
 En este trabajo se abordara el tema de **búsquedas en profundidad** 
 
-Una búsqueda en profundidad(DFS o Depth First Search) es un algoritmo que permite recorrer todos los nodos de un árbol o grafo de manera ordenada. Esta puede ser vista como un proceso por niveles,debido a que tras visitar un nodo,  se visitan a sus hijos antes que a sus hermanos, por lo que el algoritmo tiende a bajar por las ramas del árbol haciia las hojas antes de visitar cada una de las ramas posibles. DFS se puede implementar por medio de una pila accediendo a sus elementos pur un proceso de LIFO. 
+Una búsqueda en profundidad(DFS o Depth First Search) es un algoritmo que permite recorrer todos los nodos de un árbol o grafo de manera ordenada. Esta puede ser vista como un proceso por niveles,debido a que tras visitar un nodo,  se visitan a sus hijos antes que a sus hermanos, por lo que el algoritmo tiende a bajar por las ramas del árbol hacia las hojas antes de visitar cada una de las ramas posibles. La búsqueda procede inmediatamente al nivel más profundo del árbol de búsqueda, donde los nodos no tienen ningún sucesor. Cuando esos nodos se expanden, son quitados de la frontera, así entonces la búsqueda «retrocede» al siguiente nodo más superficial que todavía tenga sucesores inexplorados.
+
+DFS se puede implementar por medio de una pila accediendo a sus elementos por un proceso de LIFO.
+
+La búsqueda en profundidad necesita almacenar sólo un camino desde la raíz a un nodo hoja, junto con los nodos
+hermanos restantes no expandidos para cada nodo del camino. Una vez que un nodo se ha  expandido, se puede quitar de la memoria tan pronto como todos su descendientes han sido explorados. 
+
+ Para un espacio de estados con factor de ramificación *b* y máxima profundidad *m*, la búsqueda primero en profundidad requiere almacenar sólo *bm+1* nodos.  la búsqueda generará todos los nodos *O(bm)* del árbol de búsqueda, donde *m* es la profundidad máxima de cualquier nodo. Así *m* puede ser mucho más grande que *d* (la profundidad de la solución más superficial), y es infinito si el árbol es
+ilimitado.
 
 **características**
  * Requiere técnica de retroceso (backtracking)
  * razones para retroceso:
    * se ha llegado al límite de profundidad
-   * se han estudiado todos los sucesores de un nodo y bno se ha llegado a la solución 
+   * se han estudiado todos los sucesores de un nodo y no se ha llegado a la solución 
    * Se sabe que el estado no conduce a la solución
    * Se genera un estado repetido 
  * **Completitud:** No asegura encontrar la solución 
  * **optimalidad:** No asegura encontrar la solución optima 
  * **Eficiencia:** bueno cuando metas alejadas del estado inicial o problemas de memoria 
  * No es bueno cuando hay ciclos.
+
+El inconveniente de la búsqueda en profundidad es que puede hacer una elección equivocada y obtener un camino muy largo (o infinito) aun cuando una elección diferente llevaría a una solución cerca de la raíz del árbol de búsqueda. 
