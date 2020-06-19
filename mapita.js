@@ -48,7 +48,7 @@ var locations = {
 	},
 	'boca': {
 		'titulo': 'Boca del Río',
-		'coordenadas': [19.10627, -96.10632]
+		'coordenadas': [19.10627, -96.10632],
 		'icon': creaIcono('images/boca.png', 18, 31)
 	},
 	'coatza': {
@@ -89,7 +89,7 @@ var locations = {
 	},
 	'papantla': {
 		'titulo': 'Papantla',
-		'coordenadas': [20.45667, -97.31561]
+		'coordenadas': [20.45667, -97.31561],
 		'icon': creaIcono('images/papantla.png', 18, 31)
 	},
 	'alvarado': {
@@ -106,7 +106,7 @@ var locations = {
 	},
 	'san_andres': {
 		'titulo': 'San Andrés Tuxtla',
-		'coordenadas': [18.44412, -95.21302]
+		'coordenadas': [18.44412, -95.21302],
 		'icon': creaIcono('images/sanandrest.png', 18, 31)
 	},
 	'vega': {
