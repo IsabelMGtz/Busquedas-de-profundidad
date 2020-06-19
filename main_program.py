@@ -2,23 +2,23 @@
 from modules.search import ciudades
 from typing import List
 
-#Definimos nuestra función que realizara la busqueda de profundidad
+#Definimos nuestra función que realizará la búsqueda de profundidad
 
 def profundidad(mapa:str, x:str, y:str) -> List[str]:
-   #Creamos el árbol y la lista que guardara la ruta
-   tree = []
-   route = []
-   tree.append(x)
-   route.append(x)
+   #Creamos el árbol y el recorrido
+   tree = [x]
+   path = {x: None}
    while tree:
       city = tree.pop()
       if city == y:
-         return route
+         print(path)
+         return
       #Recorremos por cada vecino 
       for i in mapa[city]:
-         if i not in route:
+         if i not in path:
             tree.append(i)
-            route.append(i)
-          
+            path.setdefault(i, city)
+
+#Aún no está terminado gg        
 #Probamos a ver que sale :'v           
-profundidad(ciudades, 'X', 'B')
+profundidad(ciudades, 'X', 'Tc')
