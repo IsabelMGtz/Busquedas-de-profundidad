@@ -51,3 +51,8 @@ ilimitado.
  * No es bueno cuando hay ciclos.
 
 El inconveniente de la búsqueda en profundidad es que puede hacer una elección equivocada y obtener un camino muy largo (o infinito) aun cuando una elección diferente llevaría a una solución cerca de la raíz del árbol de búsqueda. 
+
+### BIBLIOGRAFIA
+http://inteligenciaartificialgrupo33.blogspot.com/p/metodos-de-busqueda-y-ejemplos.html
+https://luismejias21.files.wordpress.com/2017/09/inteligencia-artificial-un-enfoque-moderno-stuart-j-russell.pdf
+http://www.cs.us.es/~fsancho/?e=95
