@@ -1,6 +1,7 @@
 #Importamos el diccionario de los vecinos
 from modules.search import ciudades
 from typing import List
+from timeit import default_timer
 
 #Primero definimos la función recursiva de la ruta
 #La cual recibirá el recorrido generado
@@ -39,5 +40,9 @@ def profundidad(mapa:str, x:str, y:str) -> List[str]:
             tree.append(i)
             path.setdefault(i, city)
       
-#Probamos a ver que sale :'v           
+#Evaluamos con 2 ciudades y medimos el tiempo 
+I = default_timer()       
 profundidad(ciudades, 'X', 'Y')
+F = default_timer()
+
+print('El tiempo de ejecución es', F - I)
