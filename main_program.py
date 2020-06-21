@@ -2,23 +2,42 @@
 from modules.search import ciudades
 from typing import List
 
+#Primero definimos la función recursiva de la ruta
+#La cual recibirá el recorrido generado
+#La lista vacía donde se guardará la ruta
+#La ciudad destino
+
+def ruta(d:str, r: List[str], y:str) -> List[str]:
+   if not y in r:
+      r.insert(0, y)
+   while d.get(y) != None:
+      z = d.get(y)
+      ruta(d, r, z)
+      return r
+
+
 #Definimos nuestra función que realizará la búsqueda de profundidad
+#La cual recibirá las relaciones de las cds
+#La ciudad de origen
+#La ciudad destino
 
 def profundidad(mapa:str, x:str, y:str) -> List[str]:
-   #Creamos el árbol y el recorrido
+   #Creamos el árbol y el recorrido 
    tree = [x]
    path = {x: None}
+   #Hacemos la ruta vacía para usarla después
+   route = []
    while tree:
       city = tree.pop()
       if city == y:
-         print(path)
-         return
+         #Aplicamos la función para sacar la ruta
+         R = ruta(path, route, y)
+         return R
       #Recorremos por cada vecino 
       for i in mapa[city]:
          if i not in path:
             tree.append(i)
             path.setdefault(i, city)
-
-#Aún no está terminado gg        
+      
 #Probamos a ver que sale :'v           
-profundidad(ciudades, 'X', 'Tc')
+profundidad(ciudades, 'X', 'Y')
