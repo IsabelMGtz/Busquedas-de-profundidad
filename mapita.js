@@ -61,7 +61,8 @@ var locations = {
 	},
 	'huatla': {
 		'titulo': 'Huatla de Jiménez',
-		'coordenadas': [18.13108, -96.84314]
+		'coordenadas': [18.13108, -96.84314],
+		'icon': creaIcono('images/Huatlapng.png', 18, 31)
 	},
 	'fortin': {
 		'titulo': 'Fortín de las Flores',
@@ -98,7 +99,8 @@ var locations = {
 	},
 	'tecolutla': {
 		'titulo': 'Tecolutla',
-		'coordenadas': [20.47955, -97.01012]
+		'coordenadas': [20.47955, -97.01012],
+		'icon': creaIcono('images/tecol.png', 18, 31)
 	},
 	'teziutlan': {
 		'titulo': 'Teziutlán',
