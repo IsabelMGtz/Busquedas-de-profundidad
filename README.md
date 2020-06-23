@@ -1,12 +1,12 @@
 # Busquedas-de-profundidad
-## Este es otro titulo
+
 Proyecto final de Busquedas de Profundidad 
 Presione [aquí](https://isabelmgtz.github.io/Busquedas-de-profundidad/)
 ### INTRODUCCION 
 
 La palabra búsqueda refiere a la acción de buscar; también se llama búsqueda, a la investigación o estudio de documentación, la búsqueda bibliográfica, la búsqueda de una persona, entre otras.
 
-La busqueda es una técnica para resolver problemas cuya solucion consiste en una serie de pasos que frecuentemente deben determinarse mediante la prueba sistematica de alternativas. 
+La busqueda es una técnica para resolver problemas cuya solucion consiste en una serie de pasos que frecuentemente deben determinarse mediante la prueba sistematica de alternativas. Desde los inicios de la Inteligencia Artificial, la búsqueda se ha aplicado en diversas clases de problemas como juegos de dos jugadores, problemas de satisfacción de restricciones y problemas de Pathfinding de un único agente. En la realidad existen tres tipos de búsquedas: la búsqueda a ciegas, la búsqueda heurística y la búsqueda heurística en tiempo real.
 
 ### METODOLOGIA
 
@@ -30,7 +30,7 @@ En este trabajo se abordara el tema de **búsquedas en profundidad**
 
 Una búsqueda en profundidad(DFS o Depth First Search) es un algoritmo que permite recorrer todos los nodos de un árbol o grafo de manera ordenada. Esta puede ser vista como un proceso por niveles,debido a que tras visitar un nodo,  se visitan a sus hijos antes que a sus hermanos, por lo que el algoritmo tiende a bajar por las ramas del árbol hacia las hojas antes de visitar cada una de las ramas posibles. La búsqueda procede inmediatamente al nivel más profundo del árbol de búsqueda, donde los nodos no tienen ningún sucesor. Cuando esos nodos se expanden, son quitados de la frontera, así entonces la búsqueda «retrocede» al siguiente nodo más superficial que todavía tenga sucesores inexplorados.
 
-DFS se puede implementar por medio de una pila accediendo a sus elementos por un proceso de LIFO.
+DFS ocupa una pila LIFO (Last In First Out) en lugar de una cola FIFO, una pila LIFO tiene dos operaciones: una para introducir un dato en la pila y otra para extraer un dato de la pila, a diferencia de la cola el dato que se estra de la pila es el último que se introdujo.
 
 La búsqueda en profundidad necesita almacenar sólo un camino desde la raíz a un nodo hoja, junto con los nodos
 hermanos restantes no expandidos para cada nodo del camino. Una vez que un nodo se ha  expandido, se puede quitar de la memoria tan pronto como todos su descendientes han sido explorados. 
@@ -49,6 +49,12 @@ ilimitado.
  * **optimalidad:** No asegura encontrar la solución optima 
  * **Eficiencia:** bueno cuando metas alejadas del estado inicial o problemas de memoria 
  * No es bueno cuando hay ciclos.
+ 
+ **propiedades**
+  * No es optima 
+  * Si el árbol de búsqueda no está acotado en profundidad nunca se saldria de la primera rama es decir que no es completo 
+  * Complejidad temporal: Un árbol con complejidad *m* tiene una comlejidad *O(b^m)* la complejidad de la busqueda en profundidad es mayor o igual que la de la búsqueda en amplitud 
+  * Complejidad espacial: si el espacio de búsqueda está representado por un árbol  la complejidad espacial es *O(bm)
 
 El inconveniente de la búsqueda en profundidad es que puede hacer una elección equivocada y obtener un camino muy largo (o infinito) aun cuando una elección diferente llevaría a una solución cerca de la raíz del árbol de búsqueda. 
 
@@ -56,3 +62,5 @@ El inconveniente de la búsqueda en profundidad es que puede hacer una elección
 http://inteligenciaartificialgrupo33.blogspot.com/p/metodos-de-busqueda-y-ejemplos.html
 https://luismejias21.files.wordpress.com/2017/09/inteligencia-artificial-un-enfoque-moderno-stuart-j-russell.pdf
 http://www.cs.us.es/~fsancho/?e=95
+https://es.coursera.org/lecture/resolucion-busqueda/algoritmo-primero-en-profundidad-dfs-NZo7I
+https://books.google.com.mx/books?id=WDuqquRP70UC&pg=PA48&lpg=PA48&dq=complejidad+de+las+busquedas+en+profundidad&source=bl&ots=iTW3n4fsJp&sig=ACfU3U1he63g75uB4SSupF3Nm5ZBkvmLgA&hl=es&sa=X&ved=2ahUKEwj-iN2PiZfqAhUBP60KHa2xCME4FBDoATABegQIChAB#v=onepage&q=complejidad%20de%20las%20busquedas%20en%20profundidad&f=false
