@@ -42,7 +42,8 @@ def profundidad(mapa:str, x:str, y:str) -> List[str]:
       
 #Evaluamos con 2 ciudades y medimos el tiempo 
 I = default_timer()       
-profundidad(ciudades, 'X', 'Y')
+camino = profundidad(ciudades, 'X', 'Y')
 F = default_timer()
 
+print('Camino:', camino)
 print('El tiempo de ejecución es', F - I)
