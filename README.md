@@ -57,6 +57,10 @@ ilimitado.
   * Complejidad espacial: si el espacio de búsqueda está representado por un árbol  la complejidad espacial es *O(bm)
 La búsqueda en profundidad es muy eficiente en espacio, ya que solamente necesita almacenar la información del caminio en curso examinado. Pero no es eficiente en tiempo; debido a que puede examinar ramas muy profundas.
 
+ **Implementación en el proyecto**
+En este proyecto se realizará la implementación de la búsqueda en profundidad para hallar el camino entre 2 ciudades de una selección previamente hecha de municipios del estado de Veracruz, de la cual se adjunta el mapa con estos en este mismo documento. 
+Bien, pasamos al procedimiento para realizar nuestra búsqueda en profundidad. Primero que nada, hallamos de forma manual las conexiones entre las ciudades, y agregamos esta información en un diccionario, usando notación como sigue:
+
 ### EXPERIMENTOS
 
 ### CONCLUSIONES
