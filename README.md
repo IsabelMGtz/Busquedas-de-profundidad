@@ -38,7 +38,7 @@ hermanos restantes no expandidos para cada nodo del camino. Una vez que un nodo 
  Para un espacio de estados con factor de ramificación *b* y máxima profundidad *m*, la búsqueda primero en profundidad requiere almacenar sólo *bm+1* nodos.  la búsqueda generará todos los nodos *O(bm)* del árbol de búsqueda, donde *m* es la profundidad máxima de cualquier nodo. Así *m* puede ser mucho más grande que *d* (la profundidad de la solución más superficial), y es infinito si el árbol es
 ilimitado.
 
-**características**
+**Características**
  * Requiere técnica de retroceso (backtracking)
  * razones para retroceso:
    * se ha llegado al límite de profundidad
@@ -57,8 +57,9 @@ ilimitado.
   * Complejidad espacial: si el espacio de búsqueda está representado por un árbol  la complejidad espacial es *O(bm)
 La búsqueda en profundidad es muy eficiente en espacio, ya que solamente necesita almacenar la información del caminio en curso examinado. Pero no es eficiente en tiempo; debido a que puede examinar ramas muy profundas.
 
- **Implementación en el proyecto**
-En este proyecto se realizará la implementación de la búsqueda en profundidad para hallar el camino entre 2 ciudades de una selección previamente hecha de municipios del estado de Veracruz, de la cual se adjunta el mapa con estos en este mismo documento. 
+**Implementación en el proyecto**
+
+En este proyecto se realizará la implementación de la búsqueda en profundidad para hallar el camino entre 2 ciudades de una selección previamente hecha de municipios del estado de Veracruz, de la cual se adjunta el mapa con éstos en este mismo documento. 
 Bien, pasamos al procedimiento para realizar nuestra búsqueda en profundidad. Primero que nada, hallamos de forma manual las conexiones entre las ciudades, y agregamos esta información en un diccionario, usando notación como sigue:
 
 ### EXPERIMENTOS
