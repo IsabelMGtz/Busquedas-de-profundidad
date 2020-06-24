@@ -39,11 +39,15 @@ def profundidad(mapa:str, x:str, y:str) -> List[str]:
          if i not in path:
             tree.append(i)
             path.setdefault(i, city)
-      
-#Evaluamos con 2 ciudades y medimos el tiempo 
+
+#Ahora solicitamos al usuario el camino a buscar
+A = str(input('Ingrese la ciudad origen:'))
+B = str(input('Ahora la ciudad destino:'))
+              
+#Aplicamos la función y medimos el tiempo 
 I = default_timer()       
-camino = profundidad(ciudades, 'X', 'Y')
+camino = profundidad(ciudades, A, B)
 F = default_timer()
 
-print('Camino:', camino)
+print('El camino de', A, 'a', B, 'es', camino)
 print('El tiempo de ejecución es', F - I)
