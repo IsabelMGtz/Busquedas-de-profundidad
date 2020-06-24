@@ -62,6 +62,29 @@ La búsqueda en profundidad es muy eficiente en espacio, ya que solamente necesi
 En este proyecto se realizará la implementación de la búsqueda en profundidad para hallar el camino entre 2 ciudades de una selección previamente hecha de municipios del estado de Veracruz, de la cual se adjunta el mapa con éstos en este mismo documento. 
 Bien, pasamos al procedimiento para realizar nuestra búsqueda en profundidad. Primero que nada, hallamos de forma manual las conexiones entre las ciudades, y agregamos esta información en un diccionario, usando notación como sigue:
 
+PAPANTLA: 'P'
+TECOLUTLA: 'Tc'
+TEZIUTLÁN: 'Tz'
+VEGA DE LA TORRE: 'V'
+XALAPA: 'X'
+ZEMPOALA: 'Z'
+HUATUSCO: 'H'
+BOCA DEL RÍO: 'B'
+FORTÍN: 'F'
+COATZACOALCOS: 'C'
+YANGA: 'Y'
+JOACHÍN: 'J'
+ALVARADO: 'A'
+HUAUTLA DE JIMÉNEZ: 'HJ'
+OTATITLÁN: 'O'
+NIGROMANTE: 'N'
+ACAYUCAN: 'Ac'
+SAN ANDRÉS TUXTLA: 'S'
+MINATITLÁN: 'M'
+AGUA DULCE: 'AD'
+
+Una vez creado. Primero definimos la función recursiva que arrojará la ruta final. El recorrido que realizará nuestra búsqueda en profundidad será guardado en un diccionario, del cual usaremos métodos para obtener nuestra lista con la ruta. Recibirá como argumentos el recorrido, una lista vacía que almacenará la ruta y la ciudad destino, partiendo de esta última, hallamos su valor en el diccionario (que representa la ciudad antes pasada para llegar a ella), lo agregamos a nuestra lista de ruta, y ahora a ese valor le aplicamos la función nuevamente, hasta llegar a la ciudad de origen que tendrá valor None pues es el punto de partida.
+
 ### EXPERIMENTOS
 
 ### CONCLUSIONES
