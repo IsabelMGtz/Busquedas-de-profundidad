@@ -63,27 +63,52 @@ En este proyecto se realizará la implementación de la búsqueda en profundidad
 Bien, pasamos al procedimiento para realizar nuestra búsqueda en profundidad. Primero que nada, hallamos de forma manual las conexiones entre las ciudades, y agregamos esta información en un diccionario, usando notación como sigue:
 
 PAPANTLA: 'P'
+
 TECOLUTLA: 'Tc'
+
 TEZIUTLÁN: 'Tz'
+
 VEGA DE LA TORRE: 'V'
+
 XALAPA: 'X'
+
 ZEMPOALA: 'Z'
+
 HUATUSCO: 'H'
+
 BOCA DEL RÍO: 'B'
+
 FORTÍN: 'F'
+
 COATZACOALCOS: 'C'
+
 YANGA: 'Y'
+
 JOACHÍN: 'J'
+
 ALVARADO: 'A'
+
 HUAUTLA DE JIMÉNEZ: 'HJ'
+
 OTATITLÁN: 'O'
+
 NIGROMANTE: 'N'
+
 ACAYUCAN: 'Ac'
+
 SAN ANDRÉS TUXTLA: 'S'
+
 MINATITLÁN: 'M'
+
 AGUA DULCE: 'AD'
 
 Una vez creado. Primero definimos la función recursiva que arrojará la ruta final. El recorrido que realizará nuestra búsqueda en profundidad será guardado en un diccionario, del cual usaremos métodos para obtener nuestra lista con la ruta. Recibirá como argumentos el recorrido, una lista vacía que almacenará la ruta y la ciudad destino, partiendo de esta última, hallamos su valor en el diccionario (que representa la ciudad antes pasada para llegar a ella), lo agregamos a nuestra lista de ruta, y ahora a ese valor le aplicamos la función nuevamente, hasta llegar a la ciudad de origen que tendrá valor None pues es el punto de partida.
+
+#algoritmodelaruta
+
+Ahora, pasando al programa principal que hará la búsqueda en profundidad. Definimos una función que recibirá como parámetros el diccionario con las conexiones o vecinos de las ciudades, la ciudad de origen y la ciudad destino, arrojando como salida una lista con la ruta.
+
+De acuerdo, recibidos los parámetros introducidos por el usuario el funcionamiento del programa trabaja de la siguiente manera, se creará un árbol con la ciudad origen, que irá ramificándose conforme se vayan sacando los vecinos de las ciudades terminando en la ciudad destino; un diccionario, que guadará el recorrido que se hará en el árbol; y una lista vacía que almacenará la ruta final.
 
 ### EXPERIMENTOS
 
