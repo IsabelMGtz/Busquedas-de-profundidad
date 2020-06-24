@@ -36,7 +36,8 @@ var locations = {
 	},
 	'zempoala': {
 		'titulo': 'Zempoala',
-		'coordenadas': [19.44688, -96.40507]
+		'coordenadas': [19.44688, -96.40507],
+		'icon': creaIcono('images/zempo.png', 18, 31)
 	},
 	'vega': {
 		'titulo': 'Vega de Alatorre',
@@ -82,11 +83,13 @@ var locations = {
 	},
 	'nigro': {
 		'titulo': 'El Nigromante',
-		'coordenadas': [17.76323, -95.75574]
+		'coordenadas': [17.76323, -95.75574],
+		'icon': creaIcono('images/playa.png', 18, 31)
 	},
 	'otatitlan': {
 		'titulo': 'Otatitlán',
-		'coordenadas': [18.18106, -96.03439]
+		'coordenadas': [18.18106, -96.03439],
+		'icon': creaIcono('images/otati.png', 18, 31)
 	},
 	'papantla': {
 		'titulo': 'Papantla',
@@ -113,7 +116,8 @@ var locations = {
 	},
 	'vega': {
 		'titulo': 'Vega de Alatorre',
-		'coordenadas': [20.03034, -96.65044]
+		'coordenadas': [20.03034, -96.65044],
+		'icon': creaIcono('images/vega.png', 18, 31)
 	},
 };
 
