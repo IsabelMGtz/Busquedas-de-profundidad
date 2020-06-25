@@ -45,7 +45,8 @@ var locations = {
 	},
 	'acayucan': {
 		'titulo': 'Acayucan',
-		'coordenadas': [17.95964, -94.92558]
+		'coordenadas': [17.95964, -94.92558],
+		'icon': creaIcono('images/aca.png', 18, 31)
 	},
 	'boca': {
 		'titulo': 'Boca del Río',
@@ -54,7 +55,8 @@ var locations = {
 	},
 	'coatza': {
 		'titulo': 'Coatzacoalcos',
-		'coordenadas': [18.13447, -94.45898]
+		'coordenadas': [18.13447, -94.45898],
+		'icon': creaIcono('images/coatza.png', 18, 31)
 	},
 	'agua': {
 		'titulo': 'Agua Dulce',
