@@ -68,7 +68,8 @@ var locations = {
 	},
 	'fortin': {
 		'titulo': 'Fortín de las Flores',
-		'coordenadas': [18.9017, -96.99896]
+		'coordenadas': [18.9017, -96.99896],
+		'icon': creaIcono('images/fortin.png', 18, 31)
 	},
 	'huatusco': {
 		'titulo': 'Huatusco',
