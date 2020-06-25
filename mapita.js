@@ -63,7 +63,8 @@ var locations = {
 	},
 	'huatla': {
 		'titulo': 'Huatla de Jiménez',
-		'coordenadas': [18.13108, -96.84314]
+		'coordenadas': [18.13108, -96.84314],
+		'icon': creaIcono('images/huatla.png', 18, 31)
 	},
 	'fortin': {
 		'titulo': 'Fortín de las Flores',
