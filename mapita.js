@@ -45,8 +45,7 @@ var locations = {
 	},
 	'acayucan': {
 		'titulo': 'Acayucan',
-		'coordenadas': [17.95964, -94.92558],
-		'icon': creaIcono('images/aca.png', 50, 55)
+		'coordenadas': [17.95964, -94.92558]
 	},
 	'boca': {
 		'titulo': 'Boca del Río',
@@ -64,8 +63,7 @@ var locations = {
 	},
 	'huatla': {
 		'titulo': 'Huatla de Jiménez',
-		'coordenadas': [18.13108, -96.84314],
-		'icon': creaIcono('images/Huatlapng.png', 22, 31)
+		'coordenadas': [18.13108, -96.84314]
 	},
 	'fortin': {
 		'titulo': 'Fortín de las Flores',
@@ -85,8 +83,7 @@ var locations = {
 	},
 	'nigro': {
 		'titulo': 'El Nigromante',
-		'coordenadas': [17.76323, -95.75574],
-		'icon': creaIcono('images/playa.png', 22, 35)
+		'coordenadas': [17.76323, -95.75574]
 	},
 	'otatitlan': {
 		'titulo': 'Otatitlán',
@@ -119,8 +116,7 @@ var locations = {
 	},
 	'vega': {
 		'titulo': 'Vega de Alatorre',
-		'coordenadas': [20.03034, -96.65044],
-		'icon': creaIcono('images/vega.png', 18, 31)
+		'coordenadas': [20.03034, -96.65044]
 	},
 };
 
