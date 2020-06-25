@@ -100,7 +100,8 @@ var locations = {
 	},
 	'alvarado': {
 		'titulo': 'Alvarado',
-		'coordenadas': [18.76961, -95.75894]
+		'coordenadas': [18.76961, -95.75894],
+		'icon': creaIcono('images/Alvarado.png', 18, 31)
 	},
 	'tecolutla': {
 		'titulo': 'Tecolutla',
