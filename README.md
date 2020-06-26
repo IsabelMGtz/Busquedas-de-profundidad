@@ -1,7 +1,7 @@
 # Búsquedas-de-profundidad
 
 Proyecto final de Busquedas de Profundidad 
-Presione [aquí](https://isabelmgtz.github.io/Busquedas-de-profundidad/)
+
 ### INTRODUCCIÓN 
 
 La palabra búsqueda refiere a la acción de buscar; también se llama búsqueda, a la investigación o estudio de documentación, la búsqueda bibliográfica, la búsqueda de una persona, entre otras. Estás las ocupamos en la vida cotidiana debido que al presentarse  un problema debemos encontrar la solución. 
@@ -59,7 +59,8 @@ La búsqueda en profundidad es muy eficiente en espacio, ya que solamente necesi
 
 **Implementación en el proyecto**
 
-En este proyecto se realizará la implementación de la búsqueda en profundidad para hallar el camino entre 2 ciudades de una selección previamente hecha de municipios del estado de Veracruz, de la cual se adjunta el mapa con éstos en este mismo documento. 
+En este proyecto se realizará la implementación de la búsqueda en profundidad para hallar el camino entre 2 ciudades de una selección previamente hecha de municipios del estado de Veracruz, de la cual se adjunta el mapa con éstos en este mismo documento. Presione [aquí](https://isabelmgtz.github.io/Busquedas-de-profundidad/)
+
 Bien, pasamos al procedimiento para realizar nuestra búsqueda en profundidad. Primero que nada, hallamos de forma manual las conexiones entre las ciudades, y agregamos esta información en un diccionario, usando notación como sigue:
 
 PAPANTLA: 'P'
