@@ -119,6 +119,16 @@ De acuerdo, recibidos los parámetros introducidos por el usuario el funcionamie
 
 ### CONCLUSIONES
 
+RUTA PAPANTLA - AGUA DULCE
+
+| BÚSQUEDA | TIEMPO EN SEGUNDOS |
+|----------|--------|
+| Greedy   | 0.0015250179 |
+| ** Profundidad** | 8.91700001375284e-05 |
+| Amplitud | 0.000071 |
+| Costo uniforme | 0.000038 |
+
+
 ### BIBLIOGRAFÍA
 http://inteligenciaartificialgrupo33.blogspot.com/p/metodos-de-busqueda-y-ejemplos.html
 https://luismejias21.files.wordpress.com/2017/09/inteligencia-artificial-un-enfoque-moderno-stuart-j-russell.pdf
