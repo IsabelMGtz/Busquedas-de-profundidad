@@ -120,7 +120,7 @@ De acuerdo, recibidos los parámetros introducidos por el usuario el funcionamie
 ### CONCLUSIONES
 
 A continuacion se presenta una tabla comparativa que muestra el tiempo (en segundos) que tarde en resolver una la busqueda de una ruta utilizando **Busquedas de profundidad**, así como el resto de las busquedas 
-![tabla comparativa](https://user-images.githubusercontent.com/104611582_313173419686798_5167377785264203282_n.jpg)
+![tabla comparativa](https://github.com/IsabelMGtz/Busquedas-de-profundidad/issues/3#issue-645990625)
 
 ### BIBLIOGRAFÍA
 http://inteligenciaartificialgrupo33.blogspot.com/p/metodos-de-busqueda-y-ejemplos.html
