@@ -50,4 +50,4 @@ camino = profundidad(ciudades, A, B)
 F = default_timer()
 
 print('El camino de', A, 'a', B, 'es', camino)
-print('El tiempo de ejecución es', F - I)
+print('El tiempo de ejecución es', F - I, 'segundos')
