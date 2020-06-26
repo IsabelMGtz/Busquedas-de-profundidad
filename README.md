@@ -1,7 +1,8 @@
-# Búsquedas-de-profundidad
+# Búsqueda-en-profundidad
 
-Proyecto final de Busquedas de Profundidad 
-
+Proyecto final de Búsquedas en Profundidad
+ 
+Presione [aquí](https://isabelmgtz.github.io/Busquedas-de-profundidad/) para ver el mapa creado con el que se trabajó.
 ### INTRODUCCIÓN 
 
 La palabra búsqueda refiere a la acción de buscar; también se llama búsqueda, a la investigación o estudio de documentación, la búsqueda bibliográfica, la búsqueda de una persona, entre otras. Estás las ocupamos en la vida cotidiana debido que al presentarse  un problema debemos encontrar la solución. 
@@ -10,7 +11,7 @@ En Inteligencia Artificial la busqueda es una técnica para resolver problemas c
 
 ### METODOLOGÍA
 
-En IA la busqueda consiste en elegir una opción, haciendo un lado las demás para considerarlas posteriormente en caso de no obtener respuesta alguna mediante la primera opción. La busqueda termina cuando se encuentra una solución o cuando no hay más estados que se expanden. 
+En IA la búsqueda consiste en elegir una opción, haciendo un lado las demás para considerarlas posteriormente en caso de no obtener respuesta alguna mediante la primera opción. La busqueda termina cuando se encuentra una solución o cuando no hay más estados que se expanden. 
 
 Las estrategias de búsqueda se evaluan según los siguientes criterios:
  - Completez: Si garantiza o no encontrar la solución si es que existe
@@ -40,9 +41,9 @@ ilimitado.
 
 **Características**
  * Requiere técnica de retroceso (backtracking)
- * razones para retroceso:
-   * se ha llegado al límite de profundidad
-   * se han estudiado todos los sucesores de un nodo y no se ha llegado a la solución 
+ * Razones para retroceso:
+   * Se ha llegado al límite de profundidad
+   * Se han estudiado todos los sucesores de un nodo y no se ha llegado a la solución 
    * Se sabe que el estado no conduce a la solución
    * Se genera un estado repetido 
  * **Completitud:** No asegura encontrar la solución 
@@ -51,16 +52,15 @@ ilimitado.
  * No es bueno cuando hay ciclos.
  
  **Propiedades**
-  * No es optima 
+  * No es óptima 
   * Si el árbol de búsqueda no está acotado en profundidad nunca se saldria de la primera rama es decir que no es completo 
   * Complejidad temporal: Un árbol con complejidad *m* tiene una comlejidad *O(b^m)* la complejidad de la busqueda en profundidad es mayor o igual que la de la búsqueda en amplitud 
   * Complejidad espacial: si el espacio de búsqueda está representado por un árbol  la complejidad espacial es *O(bm)
 La búsqueda en profundidad es muy eficiente en espacio, ya que solamente necesita almacenar la información del caminio en curso examinado. Pero no es eficiente en tiempo; debido a que puede examinar ramas muy profundas.
 
-**Implementación en el proyecto**
+**Implementación del Código**
 
-En este proyecto se realizará la implementación de la búsqueda en profundidad para hallar el camino entre 2 ciudades de una selección previamente hecha de municipios del estado de Veracruz, de la cual se adjunta el mapa con éstos en este mismo documento. Presione [aquí](https://isabelmgtz.github.io/Busquedas-de-profundidad/)
-
+En este proyecto se realizará la implementación de la búsqueda en profundidad para hallar el camino entre 2 ciudades de una selección previamente hecha de municipios del estado de Veracruz, de la cual se adjunta el mapa con éstos en este mismo documento. 
 Bien, pasamos al procedimiento para realizar nuestra búsqueda en profundidad. Primero que nada, hallamos de forma manual las conexiones entre las ciudades, y agregamos esta información en un diccionario, usando notación como sigue:
 
 PAPANTLA: 'P'
@@ -136,11 +136,14 @@ Ahora se muestran algunas pruebas de la ejecución de nuestro programa, su respe
 
 ### CONCLUSIONES
 
+La búsqueda en profundidad nos brinda buenos y eficientes resultados en cuanto a hallar la conexión o el camino entre 2 puntos, en este caso, la ruta de desplazamiento de una ciudad a otra, pues va desenvolviéndose o "buscando" por toda la estructura o mapa, y da una búsqueda completa. Pero también puede no ser la mejor opción ya que por ser tan "profunda" puede haber casos en que se extienda de manera innecesaria, un ejemplo en nuestro proyecto es querer moverse de Xalapa a Boca del Río, que están directamente conectados, pero la búsqueda empieza yéndose a Huatusco y profundizando en sus colindantes haciendo trabajo de más. Y esto le quita un poco de velocidad al proceso.
+
 A continuación se presenta una tabla comparativa que muestra el tiempo (en segundos) que tarda en resolver la búsqueda de una ruta especifica, utilizando **Busquedas de profundidad**  así como el resto de las clasificaciones  
 ![104611582_313173419686798_5167377785264203282_n](https://user-images.githubusercontent.com/61295862/85819017-ddc54a00-b737-11ea-8d29-13f59ebbfd55.jpg)
 
-Se puede observar que el tiempo es variado en la implementación de cada programa; sin embargo, notemos que en este comparacion las búsquedas de profundidad y amplitud son muy cercanas. Esta actividad nos puede brindar una idea acerca de qué implementación puede ser más rápida o efectiva, pero esto varía porque cada programa ofrece distintas rutas para llegar a un mismo destino, dependerá del usuario elegir cuál es su mejor opción. 
+Se puede observar que el tiempo es variado en la implementación de cada programa; sin embargo, notemos que en esta comparación las búsquedas de profundidad y amplitud son muy cercanas. Esta actividad nos puede brindar una idea acerca de qué implementación puede ser más rápida o efectiva, pero esto varía porque cada programa ofrece distintas rutas para llegar a un mismo destino, dependerá del usuario elegir cuál es su mejor opción. 
 
+A lo largo de la elaboración de este proyecto fuimos aprendiendo no sólo lo que son las búsquedas sino el también manejar códigos y conocer más sobre esta parte de la programación, y claro la parte de investigación y redacción así como reforzar el trabajo en equipo. 
 
 
 ### BIBLIOGRAFÍA
