@@ -111,6 +111,10 @@ Ahora, pasando al programa principal que hará la búsqueda en profundidad. Defi
 
 De acuerdo, recibidos los parámetros introducidos por el usuario el funcionamiento del programa trabaja de la siguiente manera, se creará un árbol con la ciudad origen, que irá ramificándose conforme se vayan sacando los vecinos de las ciudades terminando en la ciudad destino; un diccionario, que guadará el recorrido que se hará en el árbol; y una lista vacía que almacenará la ruta final.
 
+
+https://github.com/IsabelMGtz/Busquedas-de-profundidad/issues/2#issue-645970051
+
+
 ### EXPERIMENTOS
 
 ### CONCLUSIONES
