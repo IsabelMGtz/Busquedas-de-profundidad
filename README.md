@@ -139,7 +139,7 @@ Ahora se muestran algunas pruebas de la ejecución de nuestro programa, su respe
 La búsqueda en profundidad nos brinda buenos y eficientes resultados en cuanto a hallar la conexión o el camino entre 2 puntos, en este caso, la ruta de desplazamiento de una ciudad a otra, pues va desenvolviéndose o "buscando" por toda la estructura o mapa, y da una búsqueda completa. Pero también puede no ser la mejor opción ya que por ser tan "profunda" puede haber casos en que se extienda de manera innecesaria, un ejemplo en nuestro proyecto es querer moverse de Xalapa a Boca del Río, que están directamente conectados, pero la búsqueda empieza yéndose a Huatusco y profundizando en sus colindantes haciendo trabajo de más. Y esto le quita un poco de velocidad al proceso.
 
 A continuación se presenta una tabla comparativa que muestra el tiempo (en segundos) que tarda en resolver la búsqueda de una ruta especifica, utilizando **Busquedas de profundidad**  así como el resto de las clasificaciones  
-![104611582_313173419686798_5167377785264203282_n](https://user-images.githubusercontent.com/61295862/85819017-ddc54a00-b737-11ea-8d29-13f59ebbfd55.jpg)
+![106008528_1051952018532889_6508975513347142095_n](https://user-images.githubusercontent.com/61295862/85899596-e5cacb80-b7c3-11ea-86b3-de832a825ef1.jpg)
 
 Se puede observar que el tiempo es variado en la implementación de cada programa; sin embargo, notemos que en esta comparación las búsquedas de profundidad y amplitud son muy cercanas. Esta actividad nos puede brindar una idea acerca de qué implementación puede ser más rápida o efectiva, pero esto varía porque cada programa ofrece distintas rutas para llegar a un mismo destino, dependerá del usuario elegir cuál es su mejor opción. 
 
