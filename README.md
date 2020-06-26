@@ -111,8 +111,6 @@ Ahora, pasando al programa principal que hará la búsqueda en profundidad. Defi
 
 De acuerdo, recibidos los parámetros introducidos por el usuario el funcionamiento del programa trabaja de la siguiente manera, se creará un árbol con la ciudad origen, que irá ramificándose conforme se vayan sacando los vecinos de las ciudades terminando en la ciudad destino; un diccionario, que guadará el recorrido que se hará en el árbol; y una lista vacía que almacenará la ruta final.
 
-Una vez teniendo esto, mientras el árbol no esté vacío, sacamos el último elemento de este y lo asignamos a una variable, en este caso "city", que esta primera vez no coincidirá con la ciudad destino claramente, entonces recorremos los vecinos de esta variable(los cuales están guardados en el diccionario ingresado) y asi formamos la primer ramificación del árbol, y a su vez extendiendo el recorrido. Luego se saca el último elemento ingresado del árbol, que será un vecino de la ciudad origen, reasignamos a "city" este vecino, y preguntamos si éste coincide con la ciudad destino, si es así se aplicará la función ruta previamente definida y arrojará el camino; en caso contrario, pasará a hacer el mismo proceso de recorrer por los vecinos de la ciudad. Y repetirá este proceso las veces necesarias hasta llegar a la ciudad destino.
-
 
 ![20200625_214005](https://user-images.githubusercontent.com/61295811/85815763-e8c7ac80-b72e-11ea-9137-c1f011e5838d.jpg)
 
@@ -122,7 +120,7 @@ Una vez teniendo esto, mientras el árbol no esté vacío, sacamos el último el
 ### CONCLUSIONES
 
 A continuacion se presenta una tabla comparativa que muestra el tiempo (en segundos) que tarde en resolver una la busqueda de una ruta utilizando **Busquedas de profundidad**, así como el resto de las busquedas 
-![tabla comparativa](https://octodex.github.com/images/comparaciones.jpg)
+![tabla comparativa](https://user-images.githubusercontent.com/104611582_313173419686798_5167377785264203282_n.jpg)
 
 ### BIBLIOGRAFÍA
 http://inteligenciaartificialgrupo33.blogspot.com/p/metodos-de-busqueda-y-ejemplos.html
