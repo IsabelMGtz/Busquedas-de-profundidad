@@ -1,16 +1,16 @@
-# Búsqueda-en-profundidad
+# Búsquedas-de-profundidad
 
 Proyecto final de Busquedas de Profundidad 
-Presione [aquí](https://isabelmgtz.github.io/Busquedas-de-profundidad/) para dirigirse al mapa trabajado.
+Presione [aquí](https://isabelmgtz.github.io/Busquedas-de-profundidad/)
 ### INTRODUCCIÓN 
 
 La palabra búsqueda refiere a la acción de buscar; también se llama búsqueda, a la investigación o estudio de documentación, la búsqueda bibliográfica, la búsqueda de una persona, entre otras. Estás las ocupamos en la vida cotidiana debido que al presentarse  un problema debemos encontrar la solución. 
 
-En Inteligencia Artificial la búsqueda es una técnica para resolver problemas cuya solucion consiste en una serie de pasos que frecuentemente deben determinarse mediante la prueba sistematica de alternativas. Desde los inicios de la Inteligencia Artificial, la búsqueda se ha aplicado en diversas clases de problemas como juegos de dos jugadores, problemas de satisfacción de restricciones y problemas de Pathfinding de un único agente. En la realidad existen tres tipos de búsquedas: la búsqueda a ciegas, la búsqueda heurística y la búsqueda heurística en tiempo real.
+En Inteligencia Artificial la busqueda es una técnica para resolver problemas cuya solucion consiste en una serie de pasos que frecuentemente deben determinarse mediante la prueba sistematica de alternativas. Desde los inicios de la Inteligencia Artificial, la búsqueda se ha aplicado en diversas clases de problemas como juegos de dos jugadores, problemas de satisfacción de restricciones y problemas de Pathfinding de un único agente. En la realidad existen tres tipos de búsquedas: la búsqueda a ciegas, la búsqueda heurística y la búsqueda heurística en tiempo real.
 
 ### METODOLOGÍA
 
-En IA la búsqueda consiste en elegir una opción, haciendo un lado las demás para considerarlas posteriormente en caso de no obtener respuesta alguna mediante la primera opción. La busqueda termina cuando se encuentra una solución o cuando no hay más estados que se expanden. 
+En IA la busqueda consiste en elegir una opción, haciendo un lado las demás para considerarlas posteriormente en caso de no obtener respuesta alguna mediante la primera opción. La busqueda termina cuando se encuentra una solución o cuando no hay más estados que se expanden. 
 
 Las estrategias de búsqueda se evaluan según los siguientes criterios:
  - Completez: Si garantiza o no encontrar la solución si es que existe
@@ -20,13 +20,13 @@ Las estrategias de búsqueda se evaluan según los siguientes criterios:
  
  Las estrategias de búsquedas se agrupan de la siguiente manera: 
   - Búsquedas sin contar con información(  o búsqueda ciega): No existe información acerca de los pasos necesarios o sobre el costo de ruta para pasar del estado de un momento dado a la meta
-  - Búsqueda respaldada con información (o búsqueda heurística): Posee información muy valiosa para orientar la búsqueda
+  - Busqueda respaldada con información (o búsqueda heurística): Posee información muy valiosa para orientar la búsqueda
   
 Los algoritmos de búsqueda ciega o no informada no dependen de información propia del problema a la hora de resolverlo, sino que proporcionan métodos generales para recorrer los árboles de búsqueda asociados a la representación del problema, por lo que se pueden aplicar en cualquier circunstancia. 
 
 Existen dos estrategias de recorrido de un espacio de búsqueda, en anchura y en **profundidad**. El problema principal que tienen es que, al ser exahustivos y sistemáticos su coste puede ser prohibitivo para la mayoria de los problemas reales, por lo tanto solo serán aplicables en problemas pequeños, pero presentan la ventaja de que no es necesario ningún conocimiento adicional sobre el problema por lo que siempre son aplicables. 
 
-En este trabajo se abordara el tema de **búsqueda en profundidad** 
+En este trabajo se abordara el tema de **búsquedas en profundidad** 
 
 Una **búsqueda en profundidad(DFS o Depth First Search)** es un algoritmo que permite recorrer todos los nodos de un árbol o grafo de manera ordenada. Esta puede ser vista como un proceso por niveles,debido a que tras visitar un nodo,  se visitan a sus hijos antes que a sus hermanos, por lo que el algoritmo tiende a bajar por las ramas del árbol hacia las hojas antes de visitar cada una de las ramas posibles. La búsqueda procede inmediatamente al nivel más profundo del árbol de búsqueda, donde los nodos no tienen ningún sucesor. Cuando esos nodos se expanden, son quitados de la frontera, así entonces la búsqueda «retrocede» al siguiente nodo más superficial que todavía tenga sucesores inexplorados.
 
@@ -40,9 +40,9 @@ ilimitado.
 
 **Características**
  * Requiere técnica de retroceso (backtracking)
- * Razones para retroceso:
-   * Se ha llegado al límite de profundidad
-   * Se han estudiado todos los sucesores de un nodo y no se ha llegado a la solución 
+ * razones para retroceso:
+   * se ha llegado al límite de profundidad
+   * se han estudiado todos los sucesores de un nodo y no se ha llegado a la solución 
    * Se sabe que el estado no conduce a la solución
    * Se genera un estado repetido 
  * **Completitud:** No asegura encontrar la solución 
@@ -51,13 +51,13 @@ ilimitado.
  * No es bueno cuando hay ciclos.
  
  **Propiedades**
-  * No es óptima 
+  * No es optima 
   * Si el árbol de búsqueda no está acotado en profundidad nunca se saldria de la primera rama es decir que no es completo 
   * Complejidad temporal: Un árbol con complejidad *m* tiene una comlejidad *O(b^m)* la complejidad de la busqueda en profundidad es mayor o igual que la de la búsqueda en amplitud 
   * Complejidad espacial: si el espacio de búsqueda está representado por un árbol  la complejidad espacial es *O(bm)
 La búsqueda en profundidad es muy eficiente en espacio, ya que solamente necesita almacenar la información del caminio en curso examinado. Pero no es eficiente en tiempo; debido a que puede examinar ramas muy profundas.
 
-**Implementación del Código**
+**Implementación en el proyecto**
 
 En este proyecto se realizará la implementación de la búsqueda en profundidad para hallar el camino entre 2 ciudades de una selección previamente hecha de municipios del estado de Veracruz, de la cual se adjunta el mapa con éstos en este mismo documento. 
 Bien, pasamos al procedimiento para realizar nuestra búsqueda en profundidad. Primero que nada, hallamos de forma manual las conexiones entre las ciudades, y agregamos esta información en un diccionario, usando notación como sigue:
@@ -116,16 +116,29 @@ De acuerdo, recibidos los parámetros introducidos por el usuario el funcionamie
 
 
 ### EXPERIMENTOS
+Ahora se muestran algunas pruebas de la ejecución de nuestro programa, su respectivo recorido y el tiempo de computo en cada uno:
+* Papantla a Agua Dulce:
+![Captura de pantalla de 2020-06-25 21-02-20](https://user-images.githubusercontent.com/61295862/85819758-53321a00-b73a-11ea-8288-d131743b3c8c.png)
 
-Teniendo nuestras funciones definidas, ingresamos distintas ciudades de la selección con sus letras clave y sacamos las rutas entre algunos municipios. Las cuales pueden verse de manera gráfica en el mapa indicado al principio de este trabajo.
+* Agua Dulce a Papantla
+![Captura de pantalla de 2020-06-25 21-04-54](https://user-images.githubusercontent.com/61295862/85819803-79f05080-b73a-11ea-860b-e30f5e69ac41.png)
 
-A continuación se presenta una tabla comparativa que muestra el tiempo (en segundos) que tarda en resolver la búsqueda de una ruta utilizando **Busquedas de profundidad**, así como el resto de las búsquedas.
-![104611582_313173419686798_5167377785264203282_n](https://user-images.githubusercontent.com/61295862/85819017-ddc54a00-b737-11ea-8d29-13f59ebbfd55.jpg)
+* Zempoala a Coatzacoalcos 
+![Captura de pantalla de 2020-06-25 23-13-30](https://user-images.githubusercontent.com/61295862/85819856-9ab8a600-b73a-11ea-9b3c-bd036db98d8d.png)
+
+* Boca del Río a Joachín
+![Captura de pantalla de 2020-06-25 23-15-39](https://user-images.githubusercontent.com/61295862/85819930-c63b9080-b73a-11ea-80e8-1d9dc581f6cc.png)
+
+* Huatla de Jiménez a Agua Dulce
+![Captura de pantalla de 2020-06-25 23-16-35](https://user-images.githubusercontent.com/61295862/85819988-e408f580-b73a-11ea-815b-86755024b3e2.png)
 
 
 ### CONCLUSIONES
 
-La búsqueda en profundidad 
+A continuación se presenta una tabla comparativa que muestra el tiempo (en segundos) que tarda en resolver la búsqueda de una ruta especifica, utilizando **Busquedas de profundidad**  así como el resto de las clasificaciones  
+![104611582_313173419686798_5167377785264203282_n](https://user-images.githubusercontent.com/61295862/85819017-ddc54a00-b737-11ea-8d29-13f59ebbfd55.jpg)
+
+Se puede observar que el tiempo es variado en la implementación de cada programa; sin embargo, notemos que en este comparacion las búsquedas de profundidad y amplitud son muy cercanas. Esta actividad nos puede brindar una idea acerca de qué implementación puede ser más rápida o efectiva, pero esto varía porque cada programa ofrece distintas rutas para llegar a un mismo destino, dependerá del usuario elegir cuál es su mejor opción. 
 
 
 
