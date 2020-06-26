@@ -36,7 +36,8 @@ var locations = {
 	},
 	'zempoala': {
 		'titulo': 'Zempoala',
-		'coordenadas': [19.44688, -96.40507]
+		'coordenadas': [19.44688, -96.40507],
+		'icon': creaIcono('images/zempo.png', 18, 31)
 	},
 	'vega': {
 		'titulo': 'Vega de Alatorre',
@@ -53,7 +54,8 @@ var locations = {
 	},
 	'coatza': {
 		'titulo': 'Coatzacoalcos',
-		'coordenadas': [18.13447, -94.45898]
+		'coordenadas': [18.13447, -94.45898],
+		'icon': creaIcono('images/coatza.png', 18, 31)
 	},
 	'agua': {
 		'titulo': 'Agua Dulce',
@@ -62,11 +64,12 @@ var locations = {
 	'huatla': {
 		'titulo': 'Huatla de Jiménez',
 		'coordenadas': [18.13108, -96.84314],
-		'icon': creaIcono('images/Huatlapng.png', 18, 31)
+		'icon': creaIcono('images/huatla.png', 18, 31)
 	},
 	'fortin': {
 		'titulo': 'Fortín de las Flores',
-		'coordenadas': [18.9017, -96.99896]
+		'coordenadas': [18.9017, -96.99896],
+		'icon': creaIcono('images/fortin.png', 18, 31)
 	},
 	'huatusco': {
 		'titulo': 'Huatusco',
@@ -86,7 +89,8 @@ var locations = {
 	},
 	'otatitlan': {
 		'titulo': 'Otatitlán',
-		'coordenadas': [18.18106, -96.03439]
+		'coordenadas': [18.18106, -96.03439],
+		'icon': creaIcono('images/otati.png', 18, 31)
 	},
 	'papantla': {
 		'titulo': 'Papantla',
@@ -95,7 +99,8 @@ var locations = {
 	},
 	'alvarado': {
 		'titulo': 'Alvarado',
-		'coordenadas': [18.76961, -95.75894]
+		'coordenadas': [18.76961, -95.75894],
+		'icon': creaIcono('images/Alvarado.png', 18, 31)
 	},
 	'tecolutla': {
 		'titulo': 'Tecolutla',
