@@ -119,15 +119,8 @@ De acuerdo, recibidos los parámetros introducidos por el usuario el funcionamie
 
 ### CONCLUSIONES
 
-RUTA PAPANTLA - AGUA DULCE
-
-| BÚSQUEDA | TIEMPO EN SEGUNDOS |
-|----------|--------|
-| Greedy   | 0.0015250179 |
-| ** Profundidad** | 8.91700001375284e-05 |
-| Amplitud | 0.000071 |
-| Costo uniforme | 0.000038 |
-
+A continuacion se presenta una tabla comparativa que muestra el tiempo (en segundos) que tarde en resolver una la busqueda de una ruta utilizando **Busquedas de profundidad**, así como el resto de las busquedas 
+![tabla comparativa](https://octodex.github.com/images/comparaciones.jpg)
 
 ### BIBLIOGRAFÍA
 http://inteligenciaartificialgrupo33.blogspot.com/p/metodos-de-busqueda-y-ejemplos.html
