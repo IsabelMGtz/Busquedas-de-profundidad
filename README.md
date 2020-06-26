@@ -104,7 +104,8 @@ AGUA DULCE: 'AD'
 
 Una vez creado. Primero definimos la función recursiva que arrojará la ruta final. El recorrido que realizará nuestra búsqueda en profundidad será guardado en un diccionario, del cual usaremos métodos para obtener nuestra lista con la ruta. Recibirá como argumentos el recorrido, una lista vacía que almacenará la ruta y la ciudad destino, partiendo de esta última, hallamos su valor en el diccionario (que representa la ciudad antes pasada para llegar a ella), lo agregamos a nuestra lista de ruta, y ahora a ese valor le aplicamos la función nuevamente, hasta llegar a la ciudad de origen que tendrá valor None pues es el punto de partida.
 
-#algoritmodelaruta
+![20200625_213910](https://user-images.githubusercontent.com/61295811/85815376-e0bb3d00-b72d-11ea-9e93-eabde554cecb.jpg)
+
 
 Ahora, pasando al programa principal que hará la búsqueda en profundidad. Definimos una función que recibirá como parámetros el diccionario con las conexiones o vecinos de las ciudades, la ciudad de origen y la ciudad destino, arrojando como salida una lista con la ruta.
 
