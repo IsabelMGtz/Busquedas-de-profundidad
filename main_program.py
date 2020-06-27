@@ -1,7 +1,7 @@
 #Importamos el diccionario de los vecinos
 from modules.search import ciudades
 from typing import List
-from timeit import default_timer
+from time import process_time
 
 #Primero definimos la función recursiva de la ruta
 #La cual recibirá el recorrido generado
@@ -45,9 +45,8 @@ A = str(input('Ingrese la ciudad origen:'))
 B = str(input('Ahora la ciudad destino:'))
               
 #Aplicamos la función y medimos el tiempo 
-I = default_timer()       
+t: float = process_time()       
 camino = profundidad(ciudades, A, B)
-F = default_timer()
 
 print('El camino de', A, 'a', B, 'es', camino)
-print('El tiempo de ejecución es', F - I, 'segundos')
+print('El tiempo de ejecución es', process_time() - t, 'segundos')
